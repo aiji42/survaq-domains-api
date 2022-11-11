@@ -13,7 +13,7 @@ const DomainCard = ({ domain, revalidateDomains }) => {
   const [removing, setRemoving] = useState(false)
   return (
     <div className="w-full mt-10 sm:shadow-md border-y sm:border border-black sm:border-gray-50 sm:rounded-lg py-10">
-      <div className="flex justify-between space-x-4 px-2 sm:px-10">
+      <div className="md:flex justify-between sm:space-x-4 px-2 sm:px-10">
         <a
           href={`http://${domain}`}
           target="_blank"
@@ -39,7 +39,7 @@ const DomainCard = ({ domain, revalidateDomains }) => {
             </svg>
           </span>
         </a>
-        <div className="flex space-x-3">
+        <div className="flex space-x-3 my-2 sm:my-0">
           <button
             onClick={() => {
               mutate(`/api/check-domain?domain=${domain}`)
