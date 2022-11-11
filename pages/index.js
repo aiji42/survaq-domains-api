@@ -45,12 +45,12 @@ export default function Home() {
         }}
       />
       <a
-        href="https://github.com/vercel/examples/tree/main/solutions/domains-api"
+        href="https://survaq.com"
         target="_blank"
         rel="noreferrer"
-        className="fixed top-5 right-5"
+        className="absolute top-5 right-5"
       >
-        <Image src="/github.svg" alt="Github" width={25} height={25} />
+        <Image src="/survaq.png" alt="Survaq" width={32} height={32} />
       </a>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 sm:px-20 text-center my-20">
