@@ -53,7 +53,7 @@ export default function Home() {
         <Image src="/survaq.png" alt="Survaq" width={32} height={32} />
       </a>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 sm:px-20 text-center my-20">
+      <main className="flex flex-col items-center justify-center w-full flex-1 px-8 sm:px-20 text-center my-20">
         <h1 className="text-4xl sm:text-6xl font-bold">Domains API</h1>
 
         <form

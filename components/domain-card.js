@@ -12,8 +12,8 @@ const DomainCard = ({ domain, revalidateDomains }) => {
   )
   const [removing, setRemoving] = useState(false)
   return (
-    <div className="w-full mt-10 sm:shadow-md border-y sm:border border-black sm:border-gray-50 sm:rounded-lg py-10">
-      <div className="md:flex justify-between sm:space-x-4 px-2 sm:px-10">
+    <div className="w-full mt-10 shadow-md border-y border border-gray-50 rounded-lg py-10">
+      <div className="md:flex justify-between sm:space-x-4 px-4 sm:px-10">
         <a
           href={`http://${domain}`}
           target="_blank"
