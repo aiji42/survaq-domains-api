@@ -55,14 +55,16 @@ const DomainCard = ({ domain, revalidateDomains }) => {
           </button>
           <button
             onClick={async () => {
-              setRemoving(true)
-              try {
-                await fetch(`/api/remove-domain?domain=${domain}`)
-                await revalidateDomains()
-              } catch (error) {
-                alert(`Error removing domain`)
-              } finally {
-                setRemoving(false)
+              if (confirm('Are you sure you want to delete?')) {
+                setRemoving(true)
+                try {
+                  await fetch(`/api/remove-domain?domain=${domain}`)
+                  await revalidateDomains()
+                } catch (error) {
+                  alert(`Error removing domain`)
+                } finally {
+                  setRemoving(false)
+                }
               }
             }}
             disabled={removing}
